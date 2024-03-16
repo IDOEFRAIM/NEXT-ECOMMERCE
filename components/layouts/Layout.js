@@ -17,7 +17,7 @@ console.log(opened)
     >
       <AppShell.Header>
         <Group h="100%" px="md">
-          <Text>SEMISTORE</Text>
+          <Text>SEMISTORE front</Text>
                       <SearchBar/>
 
           <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />

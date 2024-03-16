@@ -8,22 +8,20 @@ import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
 export default function page(){
-    const [shirts, setshirts] = useState([])
+    const [shoes, setshoes] = useState([])
     const [error, seterror] = useState(false)
     const pathName = usePathname()
      const path = pathName.split('/')[2] 
      const [isClient, setisClient] = useState(false)
      function fetchData(){
         fetch('/api/product').then(async(result)=>{
-            if(!result.ok){
-                seterror(true)
-            }
+            if(!result.ok) seterror(true)
+
             const res =await result?.json()
-            const shirts = res.filter(x=>x.category.name==='Teeshirt')
-            if(shirts.length>0){
-               setshirts(shirts) 
-            }else seterror(true)
-            
+            const shoesCat = res.filter(x=>x.category.name==='Shoes')
+            if(shoesCat.length>0){
+                setshoes(shoesCat) 
+             }else seterror(true)
          })
      }
      useEffect(() => {
@@ -38,9 +36,9 @@ export default function page(){
                 fw={700}> {isClient ? path : ' Particular Product'} </Text>
                 
                 <Grid justify="center" align="center">
-                    {shirts.length>0 ?
-                        shirts.map(shirt=>{
-                            const {name,price,imgs,colors,_id,description} = shirt
+                    {shoes.length>0 ?
+                        shoes.map(shoe=>{
+                            const {name,price,imgs,colors,_id,description} = shoe
                             return(
                                 <Grid.Col
                                 key={_id}

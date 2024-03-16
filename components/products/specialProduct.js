@@ -116,27 +116,27 @@ export default function specialProducts() {
                 >
 
                     <Grid.Col
-                    span={{base:12,md:6,lg:4}}gutter={5} >
+                    span={{base:12,md:6,lg:4}} gutter={5} >
                         <Card/>
                     </Grid.Col>
                     <Grid.Col
-                    span={{base:12,md:6,lg:4}}gutter={5} >
+                    span={{base:12,md:6,lg:4}} gutter={5} >
                         <Card/>
                     </Grid.Col>
                     <Grid.Col
-                    span={{base:12,md:6,lg:4}}gutter={5} >
+                    span={{base:12,md:6,lg:4}} gutter={5} >
                         <Card/>
                     </Grid.Col>
                     <Grid.Col
-                    span={{base:12,md:6,lg:4}}gutter={5} >
+                    span={{base:12,md:6,lg:4}} gutter={5} >
                         <Card/>
                     </Grid.Col>
                     <Grid.Col
-                    span={{base:12,md:6,lg:4}}gutter={5} >
+                    span={{base:12,md:6,lg:4}} gutter={5} >
                         <Card/>
                     </Grid.Col>
                     <Grid.Col
-                    span={{base:12,md:6,lg:4}}gutter={5} >
+                    span={{base:12,md:6,lg:4}} gutter={5} >
                         <Card/>
                     </Grid.Col>
 

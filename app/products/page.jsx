@@ -1,32 +1,15 @@
 'use client'
 import {Box, Grid, Stack,Text} from '@mantine/core'
-import specialProducts from '../../../components/products/specialProduct'
-import Card from '../../../components/layouts/Cards'
-import { usePathname } from 'next/navigation'
-
-import { useEffect, useState } from 'react'
-
+import specialProducts from '../../components/products/specialProduct'
+import Card from '../../components/layouts/Cards'
 export default function page(){
-    const pathName = usePathname()
-     const path = pathName.split('/')[2] 
-     const [isClient, setisClient] = useState(false)
-     function fetchData(){
-        fetch('/api/product').then(async(result)=>{
-            const res =await result.json()
-            console.log(res)
-         })
-     }
-     useEffect(() => {
-        setisClient(true)
-        fetchData()
-     })
     return(
         <Box>
-            <Text
+            <Stack>
+                <Text
                 color='orange'
                 size='xl'
-                fw={700}> {isClient ? path : ' Particular Product'} </Text>
-            <Stack>
+                fw={700}>Teeshirt</Text>
                 <Grid justify="center" align="center">
                     <Grid.Col
                     span={{base:12,md:6,lg:3}} >
