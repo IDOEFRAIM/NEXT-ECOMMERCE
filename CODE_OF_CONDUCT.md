@@ -1,6 +1,3 @@
-Sure! Here's a simple and professional example of a `CODE_OF_CONDUCT.md` file that you can include in your project to set expectations for respectful behavior:
-
----
 
 # 📜 Code of Conduct
 
